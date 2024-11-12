@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeu de Drapeaux - Voyage autour du monde</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <!-- Image de couverture -->
+      <div class="cover-image">
+        <img src="photo/coverJeux.jpg" alt="Voyage autour du monde" />
+      </div>
+
+      <h1>🌍 Voyage autour du Monde ! ✈️</h1>
+
+      <!-- Bouton de démarrage du jeu -->
+      <button id="start-button">Démarrer le jeu</button>
+
+      <!-- Timer -->
+      <div id="timer" style="display: none">Temps restant: 10s</div>
+
+      <!-- Affichage du drapeau -->
+      <div class="flag-container" style="display: none">
+        <img id="flag-image" src="" alt="Drapeau à deviner" />
+      </div>
+
+      <!-- Réponses sous forme de boutons -->
+      <div
+        class="answer-container"
+        id="answer-container"
+        style="display: none"
+      ></div>
+
+      <!-- Feedback pour le joueur -->
+      <div id="feedback" style="display: none"></div>
+
+      <!-- Score du joueur -->
+      <div id="score" style="display: none">
+        <p>Score: <span id="score-value">0</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
